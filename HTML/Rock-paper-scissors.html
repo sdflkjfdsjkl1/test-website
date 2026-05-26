@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS | GAME</title>
+    <link rel="stylesheet" href="../Styles/general.css">
+    <link rel="icon" href="../Images/gamepad_8037145.png">
+    <link rel="stylesheet" href="../Styles/Rock-paper-scissors.css">
+    <script src="../Scripts/Rock-paper-scissors.js" defer></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div class="moves">
+            <button class="moves-btn" >
+                <img src="../Images/fist.png" alt="">
+            </button>
+            <button class="moves-btn">
+                <img src="../Images/hand-paper.png" alt="">
+            </button>
+            <button class="moves-btn">
+                <img src="../Images/scissors.png" alt="">
+            </button>
+        </div>
+        <p class="winner" id="winner"></p>
+        <div class="result" id="result"></div>
+        <div class="score" id="score"></div>
+        <button class="reset-btn" id="reset-btn">Reset</button>
+        <button class="auto-play-btn" id="auto-play-btn">Auto Play</button>
+        <div class="confirmation" id="confirmation">
+            Are you sure you want to reset the score? 
+            <button type="button" id="yes-btn">Yes</button>
+            <button type="button" id="no-btn">No</button>
+        </div>
+    </div>
+</body>
+</html>

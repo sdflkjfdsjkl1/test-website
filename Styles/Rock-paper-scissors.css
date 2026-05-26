@@ -1,0 +1,105 @@
+.game-wrapper {
+    width: 1000px;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
+.moves {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    height: 100%;
+    column-gap: 25px;
+    margin-bottom: 70px;
+}
+
+.moves button {
+    border-radius: 50%;
+    padding: 55px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 10px solid rgb(246, 242, 24);
+    cursor: pointer;
+    transition: background-color .15s;
+}
+
+.player-picked-moves, 
+.computer-picked-moves {
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    background: rgb(246, 242, 24);
+    padding: 30px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.computer-picked-moves {
+    background-color: #21c732;
+}
+
+.moves button:hover {
+    background-color: rgb(246, 242, 24);
+}
+
+button {
+    padding: 7.5px  15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.moves button img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.winner, 
+.lose,
+.tie {
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.winner {
+    color: rgb(246, 242, 24);
+}
+
+.lose {
+    color: rgb(8, 255, 66);
+}
+
+.tie {
+    color: #ffffff;
+}
+
+.score,
+.result {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.confirmation {
+    font-size: 20px;
+    display: none;
+}
+
+.reset-button,
+.auto-play-btn {
+    margin-bottom: 35px;
+}
+
+.active {
+    display: block;
+}
